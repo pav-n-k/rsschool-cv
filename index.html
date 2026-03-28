@@ -1,62 +1,72 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
-        <title>rsschool-cv-html</title>
-    </head>
 
-    <body>
-        <div id="app" class="container">
-            <header>
-                <div class="preview"><img src="" alt="" srcset="" /></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>rsschool-cv-html</title>
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#contacts">Contact Information</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Code example</a></li>
+                    <li><a href="#education">Work Experience</a></li>
+                    <li><a href="#english-level">Education</a></li>
+                </ul>
+            </nav>
+            <div class="card">
+                <img class="avatar" src="./assets/img/avatar.png" alt="avatar">
                 <h1 class="name">Pavel Nikonorov</h1>
                 <h2 class="title">Frontend developer</h2>
-            </header>
-            <main>
-                <section>
-                    <h2 class="title">Contact Information</h2>
-                    <ul class="list">
-                        <li>
-                            <span>Telegram: </span
-                            ><a
-                                href="http://t.me/pav_n_k"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >@pav_n_k</a
-                            >
-                        </li>
-                        <li>
-                            <span>Email: </span
-                            ><a href="mailto:pav.nknv@gmail.com"
-                                >pav.nknv@gmail.com</a
-                            >
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="title">About me</h2>
-                    <p>
-                        I am studying to become a frontend developer at RSSchool
-                        and on the platform theOdinProject.com. I am confident
-                        in HTML CSS and JS. I am going to get a frontend
-                        developer position in 2027
-                    </p>
-                </section>
-                <section>
-                    <h2 class="title">Skills</h2>
-                    <ul class="list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JS</li>
-                        <li>TS</li>
-                        <li>React</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="title">Code example</h2>
-                    <pre>
+            </div>
+        </header>
+        <main>
+            <section id="contacts">
+                <h2 class="title">Contact Information</h2>
+                <ul class="list">
+                    <li>
+                        <span>Telegram: </span><a href="http://t.me/pav_n_k" target="_blank"
+                            rel="noopener noreferrer">@pav_n_k</a>
+                    </li>
+                    <li>
+                        <span>Email: </span><a href="mailto:pav.nknv@gmail.com">pav.nknv@gmail.com</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="about-me">
+                <h2 class="title">About me</h2>
+                <p>
+                    I am studying to become a frontend developer at RSSchool
+                    and on the platform theOdinProject.com. I am confident
+                    in HTML CSS and JS. I am going to get a frontend
+                    developer position in 2027
+                </p>
+            </section>
+            <section id="skills">
+                <h2 class="title">Skills</h2>
+                <ul class="list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                    <li>TS</li>
+                    <li>React</li>
+                </ul>
+            </section>
+            <section id="code-example">
+                <h2 class="title">Code example</h2>
+                <pre class="code">
                 <code>
                 function vowelOne(s) {
                     const vowels = ['a', 'e', 'i', 'o', 'u', 'а'];
@@ -68,53 +78,31 @@
                 }
                 </code>
             </pre>
-                </section>
-                <section>
-                    <h2 class="title">Work Experience</h2>
-                    <ul class="list">
-                        <li>
-                            <a
-                                href="https://rs.school/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >RSSchool from 2026 to the present</a
-                            >
-                        </li>
-                    </ul>
-                </section>
-                <section>
-                    <h2 class="title">Education</h2>
-                    <span
-                        >Moscow State University of Instrument Engineering and
-                        Computer Science 2008 - 2013, Engineer</span
-                    >
-                </section>
-                <section>
-                    <h2 class="title">English proficiency level</h2>
-                    <ul class="list">
-                        <li>
-                            <span>B1 (Intermediate)</span>
-                        </li>
-                    </ul>
-                </section>
-            </main>
-            <footer>
-                <a
-                    href="https://github.com/pav-n-k"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >github pav-n-k</a
-                >
-                <div>
-                    <img class="rs-school-logo" src="./svg/rs-school-logo.svg" alt="rs school logo">
-                    <a
-                        href="https://rs.school/courses/javascript-preschool-ru"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >JS / Front-end Pre-school RU Course</a
-                    >
-                </div>
-            </footer>
-        </div>
-    </body>
+            </section>
+            <section id="experience">
+                <h2 class="title">Work Experience</h2>
+                <ul class="list">
+                    <li>
+                        <a href="https://rs.school/" target="_blank" rel="noopener noreferrer">RSSchool from 2026 to the
+                            present</a>
+                    </li>
+                </ul>
+            </section>
+            <section id="education">
+                <h2 class="title">Education</h2>
+                <span>Moscow State University of Instrument Engineering and
+                    Computer Science 2008 - 2013, Engineer</span>
+            </section>
+            <section id="english-level">
+                <h2 class="title">English proficiency level</h2>
+                <ul class="list">
+                    <li>
+                        <span>B1 (Intermediate)</span>
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+
 </html>
